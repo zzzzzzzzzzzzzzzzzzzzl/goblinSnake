@@ -19,10 +19,10 @@ public class AppleSpawner : MonoBehaviour
         Vector3 pos = randomPos();
 
 
-        // while (isPosInsideSnake(pos, snakeBody))
-        // {
-        //     pos = randomPos();
-        // }
+        while (isPosInsideSnake(pos, snakeBody))
+        {
+            pos = randomPos();
+        }
         apple = Instantiate(applePrefab);
         apple.transform.position = pos;
 
